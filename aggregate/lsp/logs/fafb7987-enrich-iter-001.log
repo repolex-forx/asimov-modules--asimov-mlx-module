@@ -1,0 +1,17 @@
+[2026-09-27T19:23:21Z] === ENRICH ITERATION 1 START | repo=asimov-modules/asimov-mlx-module sha=fafb7987 ===
+[2026-09-27T19:23:21Z] [iter=1] PHASE START: enrich repo=asimov-modules/asimov-mlx-module sha=fafb7987 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fafb7987-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fafb79875a38b57b322acb3d74e818c2d8cda564.nq.gz
+[2026-09-27T19:23:26Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-27T19:23:27Z] [iter=1] AST store loaded triples=6341 load_secs=0 mem_mb=95 MB
+[2026-09-27T19:23:27Z] [iter=1] Step 2: Finding LSP targets mem_mb=95 MB
+[2026-09-27T19:23:27Z] [iter=1] LSP targets found call_sites=72 imports=5 extends=0 implements=0 secs=0
+[2026-09-27T19:23:27Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=96 MB
+[2026-09-27T19:23:27Z] [iter=1] Position index built positions=415 nodes_with_types=535 secs=0 mem_mb=96 MB
+[2026-09-27T19:23:27Z] [iter=1] Step 3: Starting LSP resolution mem_mb=96 MB already_completed_types=[] already_completed_files=0
+[2026-09-27T19:23:27Z] [iter=1] Resolving target type target_type=call_site count=72
+[2026-09-27T19:24:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=1 resolved=31 errors=1 current=src/lib.rs
+[2026-09-27T19:24:04Z] [iter=1] Target type resolved target_type=call_site resolved=50 errors=1 secs=37 mem_mb=97 MB
+[2026-09-27T19:24:04Z] [iter=1] Resolving target type target_type=import_statement count=5
+[2026-09-27T19:24:17Z] [iter=1] Target type resolved target_type=import_statement resolved=5 errors=0 secs=13 mem_mb=97 MB
+[2026-09-27T19:24:30Z] [iter=1] Step 5: Writing final enrichment file triples=683
+[2026-09-27T19:24:30Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/fafb79875a38b57b322acb3d74e818c2d8cda564.nq.gz size_kb=8
+[2026-09-27T19:24:30Z] [iter=1] PHASE END: enrich elapsed_s=69 elapsed_min=1.1 total_triples=683
